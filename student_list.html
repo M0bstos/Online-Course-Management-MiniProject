@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="admin.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="register_admin.html">
+                    <i class='bx bx-book-add' ></i>
+                    <span>Add a Course</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="student_list.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span>Student List</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>List of</span>
+                <h2>Participants</h2>
+            </div>
+            <div class="user--info">
+                <img src="assets/pfp.jpg" alt="" />
+            </div>
+        </div>
+        <main class="table" id="customers_table">
+            <section class="table__header">
+                <h1>Participant Info</h1>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id </th>
+                            <th> Customer </th>
+                            <th> Registration No </th>
+                            <th> Order Date </th>
+                            <th> Status </th>
+                            <th> Course Code </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> <img src="assets/pfp.jpg" alt="">Harsh Nanda</td>
+                            <td> 22BCT0367 </td>
+                            <td> 12 Nov, 2023 </td>
+                            <td>
+                                <p class="status paid">Paid</p>
+                            </td>
+                            <td> <strong>BMAT301L</strong></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 27 Aug, 2023 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>BCSE202L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 03 Mar, 2024 </td>
+                            <td>
+                                <p class="status pending">Pending</p>
+                            </td>
+                            <td> <strong>BHUM102L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 08 Jan, 2023 </td>
+                            <td>
+                                <p class="status paid">Paid</p>
+                            </td>
+                            <td> <strong>BLAN102L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 22 Feb, 2024 </td>
+                            <td>
+                                <p class="status pending">Pending</p>
+                            </td>
+                            <td> <strong>BCSE102L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 06 Oct, 2023 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>BSTS201L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 28 June, 2023 </td>
+                            <td>
+                                <p class="status paid">Paid</p>
+                            </td>
+                            <td> <strong>BECE201L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 29 Sep, 2023 </td>
+                            <td>
+                                <p class="status pending">Pending</p>
+                            </td>
+                            <td> <strong>BMAT101L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 01 Mar, 2024 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>BPHY101L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 10</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 12 Dec, 2023 </td>
+                            <td>
+                                <p class="status paid">Paid</p>
+                            </td>
+                            <td> <strong>BCSE306L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 11</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 27 Aug, 2023 </td>
+                            <td>
+                                <p class="status pending">Pending</p>
+                            </td>
+                            <td> <strong>BCSE203E</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 12</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 12 Jan, 2024 </td>
+                            <td>
+                                <p class="status paid">Paid</p>
+                            </td>
+                            <td> <strong>BHUM202L</strong> </td>
+                        </tr>
+                        <tr>
+                            <td> 13</td>
+                            <td><img src="assets/pfp.jpg" alt=""> Harsh Nanda </td>
+                            <td> 22BCT0367 </td>
+                            <td> 06 May, 2024 </td>
+                            <td>
+                                <p class="status cancelled">Cancelled</p>
+                            </td>
+                            <td> <strong>BMAT101L</strong> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

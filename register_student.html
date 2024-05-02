@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="user.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="user.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="register_student.html">
+                    <i class='bx bxs-cart-add'></i>
+                    <span>Register</span>
+                </a>
+            </li>
+            <li>
+                <a href="course_history.html">
+                    <i class='bx bx-history'></i>
+                    <span>History</span>
+                </a>
+            </li>
+            <li>
+                <a href="payment.html">
+                    <i class='bx bxl-paypal'></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+             <span>Available</span>
+             <h2>Courses</h2>
+            </div>
+            <div class="user--info">
+                <img src="assets/pfp.jpg" alt="" />
+            </div>
+        </div>
+        <div class="card--container">
+            <h1 class="main--title">Select a course</h1>
+            <div class="card--wrapper">
+<!--Java-->
+                <div class="course--card night-fade">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">BCSE203E</span>
+                            <span class="amount-value">₹6000.00</span>
+                        </div>
+                        <i class='bx bxl-java bx-border-circle icon'></i>
+                    </div>
+                    <span class="course-detail">Java Programming</span>
+                </div>
+<!--Cpp-->
+                <div class="course--card purple-paradise">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">BCSE102E</span>
+                            <span class="amount-value">₹5000.00</span>
+                        </div>
+                        <i class='bx bxl-c-plus-plus bx-border-circle icon' ></i>
+                    </div>
+                    <span class="course-detail">Object Oriented Programming</span>
+                </div>
+<!--Differential Equations-->
+                <div class="course--card sharpeye-eagle">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">BMAT102L</span>
+                            <span class="amount-value">₹3000.00</span>
+                        </div>
+                        <i class='bx bx-math bx-border-circle icon' ></i>
+                    </div>
+                    <span class="course-detail">Differential Equations</span>
+                </div>
+<!--Operating Systems-->
+                <div class="course--card kye-meh">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">BCSE203E</span>
+                            <span class="amount-value">₹8000.00</span>
+                        </div>
+                        <i class='bx bxl-microsoft bx-border-circle icon'></i>
+                    </div>
+                    <span class="course-detail">Operating Systems</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

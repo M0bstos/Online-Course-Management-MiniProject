@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="user.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li>
+                <a href="user.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="register_student.html">
+                    <i class='bx bxs-cart-add'></i>
+                    <span>Register</span>
+                </a>
+            </li>
+            <li>
+                <a href="course_history.html">
+                    <i class='bx bx-history'></i>
+                    <span>History</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="payment.html">
+                    <i class='bx bxl-paypal'></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Payment</span>
+                <h2>Portal</h2>
+            </div>
+            <div class="user--info">
+                <img src="assets/pfp.jpg" alt="">
+            </div>
+        </div>
+        <div class="payment--content">
+            <div class="payment--container">
+                <h6>Checkout</h6>
+                <span>x</span>
+                <h1>Payment Method</h1>
+                <form action="">
+                    <label for="country">Country
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="England">United Kingdom</option>
+                            <option value="Germany">United States of America</option>
+                        </select>
+                    </label>
+                    <label for="cardno">Card Number
+                        <input type="text" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace()">
+                    </label>
+                    <div class="float">
+                        <label for="validtill">Valid till
+                            <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()">
+                        </label>
+                        <label for="cvv">CVV
+                            <input type="text" name="cvv" id="cvv" maxlength="3">
+                        </label>
+                    </div>
+                    <label for="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <p>Payment Address is the same as the Delivery Address</p>
+                    </label>
+                    <button type="submit" class="btn">Pay 6000.00 ₹</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

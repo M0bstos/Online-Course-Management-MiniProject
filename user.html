@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <a href="user.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="register_student.html">
+                    <i class='bx bxs-cart-add'></i>
+                    <span>Register</span>
+                </a>
+            </li>
+            <li>
+                <a href="course_history.html">
+                    <i class='bx bx-history'></i>
+                    <span>History</span>
+                </a>
+            </li>
+            <li>
+                <a href="payment.html">
+                    <i class='bx bxl-paypal'></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+             <span>Student</span>
+             <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <img src="assets/pfp.jpg" alt="" />
+            </div>
+        </div>
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Registered Courses</h3>
+            <div class="table-container">
+             <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                        <th>Faculty</th>
+                        <th>Date Registered</th>
+                        <th>Payment Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Programming</td>
+                            <td>BCSE203E</td>
+                            <td>Satish CJ</td>
+                            <td>07-01-2024</td>
+                            <td>Pending</td>
+                            <td><button><i class='bx bx-trash btn icon' ></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Probability</td>
+                            <td>BMAT202L</td>
+                            <td>Parvez Alam</td>
+                            <td>08-02-2024</td>
+                            <td>Pending</td>
+                            <td><button><i class='bx bx-trash btn icon' ></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Artificial Intelligence</td>
+                            <td>BCSE306L</td>
+                            <td>Sridhar R </td>
+                            <td>27-09-2023</td>
+                            <td>Completed</td>
+                            <td><button><i class='bx bx-trash btn icon' ></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Calculus</td>
+                            <td>BMAT101L</td>
+                            <td>Pabitra Bala</td>
+                            <td>20-10-2022</td>
+                            <td>Completed</td>
+                            <td><button><i class='bx bx-trash btn icon' ></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Complex Algebra</td>
+                            <td>BMAT201L</td>
+                            <td>Shobana Devi</td>
+                            <td>12-11-2023</td>
+                            <td>Completed</td>
+                            <td><button><i class='bx bx-trash btn icon' ></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Spanish 1</td>
+                            <td>BLAN102L</td>
+                            <td>Nupur Mansi</td>
+                            <td>06-10-2023</td>
+                            <td>Completed</td>
+                            <td><button><i class='bx bx-trash btn icon' ></i></button></td>
+                        </tr>
+                        
+                    </tbody>
+             </table>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

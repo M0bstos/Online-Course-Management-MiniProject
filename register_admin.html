@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Addition</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="admin.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="register_admin.html">
+                    <i class='bx bx-book-add' ></i>
+                    <span>Add a Course</span>
+                </a>
+            </li>
+            <li>
+                <a href="student_list.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span>Student List</span>
+                </a>
+            </li>
+
+            <li class="logout">
+                <a href="login.html">
+                    <i class='bx bx-log-out'></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+             <span>Add a</span>
+             <h2>Course</h2>
+            </div>
+            <div class="user--info">
+                <img src="assets/pfp.jpg" alt="" />
+            </div>
+        </div>
+
+        <div class="card--container">
+            <h1 class="main--title mainAdd" onclick="openAdd()">Add a course
+                <i class='bx bx-plus plus' ></i>
+            </h1>
+            <div class="card--wrapper">
+<!--Java-->
+                <div class="course--card night-fade">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">BCSE203E</span>
+                            <span class="amount-value">₹6000.00</span>
+                        </div>
+                        <i class='bx bxl-java bx-border-circle icon'></i>
+                    </div>
+                    <span class="course-detail">Java Programming</span>
+                </div>
+
+    <div id="addcourse" class="payment--content" style="display: none">
+        <div class="payment--container">
+            <h6>Admin</h6>
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h1>Edit Mode</h1>
+            <form action="">
+                <label for="cardno">Course Name
+                    <input type="text" name="cardno" id="cardno">
+                </label>
+                <div class="float">
+                    <label for="validtill">Course Code
+                        <input type="text" name="validtill" id="validtill" maxlength="8">
+                    </label>
+                    <label for="cvv">Registration Fee
+                        <input type="text" name="cvv" id="cvv">
+                    </label>
+                </div>
+                <label for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <p>Do you want to save your changes?</p>
+                </label>
+                <button type="submit" class="btns">Save</button>
+            </form>
+        </div>
+    </div>
+    
+<script src="admin_script.js"></script>
+</body>
+</html>
